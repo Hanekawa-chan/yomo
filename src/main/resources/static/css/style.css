@@ -1,0 +1,34 @@
+body {
+    background-color: RGB(215, 215, 215);
+}
+.hud-line {
+    background-color: black;
+    width: 100vw;
+    height: 10vh;
+    color: RGB(229, 167, 4);
+    font-size: 35px;
+    font-family: 'Didact Gothic', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+.hud-img {
+    height: inherit;
+    object-fit: scale-down;
+    width: 10vh;
+}
+.hud-main {
+    width: 12%;
+    height: inherit;
+    text-align: center;
+}
+.hud-text {
+    margin-top: 2.5vh;
+    margin-bottom: 3.4vh;
+}
+a {
+    text-decoration: none;
+    color: RGB(229, 167, 4);
+}
+.hud-main:hover {
+    background-color: RGB(65, 65, 65);
+}

@@ -18,4 +18,14 @@ public class MainController {
         return "team";
     }
 
+    @GetMapping("/stats")
+    public String stats(){
+        return "stats";
+    }
+
+    @GetMapping("/citats")
+    public String citats(){
+        return "citats";
+    }
+
 }
