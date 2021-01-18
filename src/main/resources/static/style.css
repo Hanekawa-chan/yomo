@@ -1,3 +1,6 @@
 body {
-    background-color: lightblue;
+    background-color: RGB(124, 124, 124);
+}
+hud-line {
+    background-color: black;
 }
