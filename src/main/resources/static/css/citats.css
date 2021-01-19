@@ -1,4 +1,12 @@
 .citats {
     background-color: RGB(36, 36, 36);
-    color: RGB(180, 131, 0);
+}
+.lower-text {
+    font-family: 'Alice', serif;
+    font-size: 15px;
+}
+.citation {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Neucha', cursive;
 }

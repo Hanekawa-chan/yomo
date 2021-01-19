@@ -5,11 +5,12 @@ body {
     background-color: black;
     width: 100vw;
     height: 10vh;
-    color: RGB(229, 167, 4);
+    color: RGB(215, 215, 215);
     font-size: 35px;
     font-family: 'Didact Gothic', sans-serif;
     display: flex;
     flex-direction: row;
+    position: sticky;
 }
 .hud-img {
     height: inherit;
@@ -27,8 +28,9 @@ body {
 }
 a {
     text-decoration: none;
-    color: RGB(229, 167, 4);
+    color: RGB(215, 215, 215);
 }
 .hud-main:hover {
     background-color: RGB(65, 65, 65);
+    color: RGB(246, 246, 246);
 }

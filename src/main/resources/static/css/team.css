@@ -1,4 +1,32 @@
 .team {
     background-color: RGB(36, 36, 36);
-    color: RGB(180, 131, 0);
+}
+.wrapped-box {
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: RGB(102, 102, 102);
+    width: 60vw;
+    justify-content: space-between;
+    align-content: space-between;
+    margin-left: 4vw;
+}
+.box {
+    width: 29vw;
+    height: 20vh;
+    background-color: black;
+    color: RGB(215, 215, 215);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+}
+.background {
+    padding-top: 5vh;
+    height: 85vh;
+    width: 68vw;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    background-color: RGB(102, 102, 102);
+}
+.mar {
+    margin-left: 1vw;
 }
