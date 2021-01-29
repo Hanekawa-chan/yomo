@@ -1,3 +1,14 @@
 .main {
     background-color: RGB(36, 36, 36);
 }
+.main-text {
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
+    padding-top: 5vh;
+    text-align: center;
+    height: 85vh;
+    width: 68vw;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    background-color: RGB(102, 102, 102);
+}

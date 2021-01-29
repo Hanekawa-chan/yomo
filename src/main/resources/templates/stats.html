@@ -32,8 +32,55 @@
             <p class="hud-text">Цитаты</p>
         </a>
     </div>
+    <div class="hud-half">
+        <p></p>
+    </div>
     <div class="hud-img">
         <img src="pix/logotype.png" class="hud-img">
+    </div>
+    <div class="hud-half">
+        <p></p>
+    </div>
+    <div class="hud-blank">
+        <p></p>
+    </div>
+    <div class="hud-blank">
+        <p></p>
+    </div>
+    <div class="hud-blank">
+        <p></p>
+    </div>
+    <div class="hud-main login">
+        <a th:href="${not logout ? '/login' : '/logout'}">
+            <p class="hud-text" th:text="${not logout ? 'Вход' : 'Выход'}">Вход</p>
+        </a>
+    </div>
+</div>
+<div class="main-block">
+    <div class="inline">
+        <span class="tyga">TAIIIGA</span>
+         -
+        <span class="green">1.3</span>
+    </div>
+    <div class="inline">
+        <span class="ilyan">iL'YAN</span>
+         -
+        <span class="green">1.1</span>
+    </div>
+    <div class="inline">
+        <span class="meon">MEON</span>
+         -
+        <span class="red">0.8</span>
+    </div>
+    <div class="inline">
+        <span class="salik">Salik</span>
+         -
+        <span class="red">0.7</span>
+    </div>
+    <div class="inline">
+        <span class="archi">Archi</span>
+         -
+        <span class="red">0.6</span>
     </div>
 </div>
 </body>

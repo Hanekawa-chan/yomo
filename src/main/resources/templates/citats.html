@@ -38,8 +38,28 @@
             <p class="hud-text">Цитаты</p>
         </a>
     </div>
+    <div class="hud-half">
+        <p></p>
+    </div>
     <div class="hud-img">
         <img src="pix/logotype.png" class="hud-img">
+    </div>
+    <div class="hud-half">
+        <p></p>
+    </div>
+    <div class="hud-blank">
+        <p></p>
+    </div>
+    <div class="hud-blank">
+        <p></p>
+    </div>
+    <div class="hud-blank">
+        <p></p>
+    </div>
+    <div class="hud-main login">
+        <a th:href="${not logout ? '/login' : '/logout'}">
+            <p class="hud-text" th:text="${not logout ? 'Вход' : 'Выход'}">Вход</p>
+        </a>
     </div>
 </div>
 <div class="citation">

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Главная</title>
     <link rel="stylesheet" type="text/css" th:href="@{css/style.css}">
-    <link rel="stylesheet" type="text/css" th:href="@{css/main.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{css/login.css}">
     <link rel="stylesheet" type="text/css" th:href="@{css/normalize.css}">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Oswald&display=swap');
@@ -54,16 +54,24 @@
             <p></p>
         </div>
         <div class="hud-main login">
-            <a th:href="${not logout ? '/login' : '/logout'}">
-                <p class="hud-text" th:text="${not logout ? 'Вход' : 'Выход'}">Вход</p>
+            <a href="/login">
+                <p class="hud-text">Вход</p>
             </a>
         </div>
     </div>
-
-    <div class="main-text">
-        <p>Запомните твари!</p>
-        <p>YOMO - это Российская киберспортивная команда по CS:GO.</p>
+    <div class="login-form">
+        <form th:method="POST" th:action="@{/login}">
+            <label for="login">Логин</label>
+            <input type="text" id="login" name="login" th:name="login"/>
+            <br/>
+            <label for="pass">Пароль</label>
+            <input type="text" id="pass" name="pass" th:name="pass"/>
+            <br/>
+            <label for="auth">Код с телефона</label>
+            <input type="text" id="auth" name="auth" th:name="auth"/>
+            <br/>
+            <input type="submit" value="Войти"/>
+        </form>
     </div>
-
 </body>
 </html>

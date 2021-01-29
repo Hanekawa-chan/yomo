@@ -10,21 +10,28 @@ body {
     font-family: 'Didact Gothic', sans-serif;
     display: flex;
     flex-direction: row;
-    position: sticky;
 }
 .hud-img {
     height: inherit;
     object-fit: scale-down;
-    width: 10vh;
+    width: 10vw;
 }
 .hud-main {
-    width: 12%;
+    width: 10vw;
     height: inherit;
     text-align: center;
 }
 .hud-text {
     margin-top: 2.5vh;
     margin-bottom: 3.4vh;
+}
+.hud-half {
+    width: 5vw;
+    height: inherit;
+}
+.hud-blank {
+    width: 10vw;
+    height: inherit;
 }
 a {
     text-decoration: none;

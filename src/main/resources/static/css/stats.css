@@ -1,3 +1,41 @@
 .stats {
     background-color: RGB(36, 36, 36);
 }
+.main-block {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align:left;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #E2E2E8;
+}
+.inline {
+    display: inline;
+}
+.tyga {
+    color: #7E007B;
+}
+.ilyan {
+    color: #5B8C5A;
+}
+.meon {
+    color: #E4BC1B;
+}
+.salik {
+    color: #FF8966;
+}
+.archi {
+    color: #12263A;
+}
+.red {
+    color: #BC365C;
+}
+.green {
+    color: #02BF78;
+}
+
