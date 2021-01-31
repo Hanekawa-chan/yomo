@@ -3,30 +3,38 @@ package com.example.demo.models;
 import java.util.*;
 
 public class Stat {
-    private int id;
     private Map<String, Double> info= new HashMap<>();
 
-    private List<String> team = Arrays.asList(new String[] { "sorryihavenoname", "tygagamer", "ALExANDROss", "76561198138688894", "76561198160302549"});
-
-    private long time;
+    private Date date;
 
     public Stat() { }
 
     public void add(String id, double rate) {
-        if(team.contains(id)) {
-            info.put(id, rate);
-        }
+        info.put(id, rate);
     }
 
     public boolean check() {
-        return info.size() >= 4;
+        return info.size() >= 3;
     }
 
-    public void setTime(long time) {
-        this.time = time;
+    public void setDate(Date date) {
+        this.date = date;
     }
 
-    public boolean compare(long time) {
-        return this.time == time;
+    public boolean compare(String date) {
+        return this.date.toString().equals(date);
+    }
+
+    public boolean notEmpty(String id) {
+        return info.containsKey(id);
+    }
+
+    public Map<String, Double> getInfo() {
+        return info;
+    }
+
+    public void merge(String id, double rate) {
+        double newRate = (info.get(id) + rate) * 0.5;
+        info.replace(id, newRate);
     }
 }

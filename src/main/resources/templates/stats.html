@@ -57,30 +57,31 @@
     </div>
 </div>
 <div class="main-block">
+    <a href="/refresh" class="refresh"><img src="pix/refresh.png" class="img"></a>
     <div class="inline">
         <span class="tyga">TAIIIGA</span>
          -
-        <span class="green">1.3</span>
+        <span th:class="${falseTyga} ? 'white' : (${tyga} >= 1? 'green' : 'red')" th:text="${tyga}">1.3</span>
     </div>
     <div class="inline">
         <span class="ilyan">iL'YAN</span>
          -
-        <span class="green">1.1</span>
+        <span th:class="${falseIlyan} ? 'white' : (${ilyan} >= 1? 'green' : 'red')" th:text="${ilyan}">1.1</span>
     </div>
     <div class="inline">
         <span class="meon">MEON</span>
          -
-        <span class="red">0.8</span>
+        <span th:class="${falseMeon} ? 'white' : (${meon} >= 1? 'green' : 'red')" th:text="${meon}">0.8</span>
     </div>
     <div class="inline">
         <span class="salik">Salik</span>
          -
-        <span class="red">0.7</span>
+        <span th:class="${falseSalik} ? 'white' : (${salik} >= 1? 'green' : 'red')" th:text="${salik}">0.7</span>
     </div>
     <div class="inline">
         <span class="archi">Archi</span>
          -
-        <span class="red">0.6</span>
+        <span th:class="${falseArchi} ? 'white' : (${archi} >= 1? 'green' : 'red')" th:text="${archi}">0.6</span>
     </div>
 </div>
 </body>
